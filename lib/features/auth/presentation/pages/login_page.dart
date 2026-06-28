@@ -1,5 +1,6 @@
 import 'package:clan_architecture/features/auth/presentation/cubit/auth_cubit.dart';
 import 'package:clan_architecture/features/auth/presentation/cubit/auth_state.dart';
+import 'package:clan_architecture/features/auth/presentation/pages/register_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -211,7 +212,14 @@ class _LoginScreenState extends State<LoginScreen> {
 
                   Center(
                     child: GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => const RegisterScreen(),
+                          ),
+                        );
+                      },
                       child: RichText(
                         text: const TextSpan(
                           style: TextStyle(

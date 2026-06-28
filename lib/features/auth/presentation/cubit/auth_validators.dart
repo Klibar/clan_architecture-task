@@ -35,7 +35,7 @@ class AuthValidators {
       return 'Confrmation Required';
     }
     if (value != password) {
-      return "Passwrod dosen't match";
+      return "Passwords don't match";
     }
     return null;
   }

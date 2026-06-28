@@ -40,7 +40,7 @@ class AuthCubit extends Cubit<AuthState> {
       emit(
         RegisterSuccessState(
           user: result.user,
-          message: 'Logged in Sccessfuly',
+          message: 'Registered Successfully',
         ),
       );
     } catch (e) {

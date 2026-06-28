@@ -43,9 +43,9 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   void _onSocialSignInPressed(BuildContext context, String provider) {
-    ScaffoldMessenger.of(
-      context,
-    ).showSnackBar(SnackBar(content: Text('$provider')));
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Sign in with $provider coming soon')),
+    );
   }
 
   @override
